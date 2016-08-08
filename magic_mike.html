@@ -1,0 +1,21 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="magic_mike.js"></script>
+
+  <title>Magic 8 Ball</title>
+</head>
+<body>
+  <h1> Ask Magic Mike </h1>
+
+    <input type="text" value="Enter your question here" id ="userName" onClick="this.setSelectionRange(0, this.value.length)"/>
+
+    <input type="button" value="Submit" onclick="magic8Ball()"/>
+    <p> Magic Mike says: </p>
+    <p id="cheese"></p>
+    <ol id=nQ>
+    </ol>
+  </body>
+  </html>

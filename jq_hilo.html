@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jq_hilo.js"></script>
+    <link rel="stylesheet" type="text/css" href="jq_hilo.css">
+    <title>Hi-Lo Game</title>
+    <h1 id="test">Hi-Lo Game</h1>
+    </script>
+  </head>
+  <body>
+  <input type="text" value="Enter your name here" id ="userName" onClick="this.setSelectionRange(0, this.value.length)"/>
+  <br>
+  <input type="button" value="Start Game" onclick="getRandomInt(); reset();"/>
+  <br>
+  <br>
+  <p>You only get 7 Guesses.</p>
+  <p id="count">
+  </p>
+  <input type="text" value="Guess between 1-100" id ="userGuess" onClick="this.setSelectionRange(0, this.value.length)"/>
+  <input type="button" value="Guess" id="myBtn"/>
+  <p id="error"></p>
+  <p id="hint1"> <strong> Hint </strong> </p>
+  <p id="hint2">
+     The hint will show up here
+     <ol id="numbersGuessed">
+     </ol>
+  </p>
+  <h1 id="result"><h1>
+  <p class="result" id="winner"></p>
+  <p class="result" id="loser"></p>
+  </body>
+</html>
